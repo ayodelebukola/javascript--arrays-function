@@ -1,15 +1,14 @@
 //QUESTION 1
-//Mutating methods are ones that change  the object after the method has been used.
+//Mutating methods are ones that change the object after the method has been used.
 //Non-mutating methods do not change the object after the method has been used.
 
-//Mutating methods are those that modify the array they are called on. such that  if you call a mutating array method, the array will be changed. 
+//Mutating methods are those that modify the array they are called on. Such that  if you call a mutating array method, the array will be changed. 
 //These methods add or remove elements from the array or modify thr=e existing elements.
 
-//Non-mutating methods are those that don't modify the array they are called on. such that if you call a non-mutating array method, 
-//the original array will remain unchanged. these methods create a new array from the elements of the original array but do not modify the original array.
+//Non-mutating methods are those that don't modify the array they are called on. Such that if you call a non-mutating array method, 
+//the original array will remain unchanged. These methods create a new array from the elements of the original array but do not modify the original array.
 
 //Mutating array methods tend to be faster than non-mutating array methods as they don't need to create a new array.
-
 //Mutating array methods are faster than non-mutating methods but require more caution when used. Non-mutating are slower but easier to debug and understand.
 
 //Examples of mutating array methods are: 
@@ -17,9 +16,9 @@
 //Array.push()
 //Array.shift()
 //Array.unshift()
+//Array.splice()
 //Array.reverse()
 //Array.sort()
-//Array.splice()
 
 //Examples of non-mutating array methods:
 //Array.slice()
@@ -65,23 +64,22 @@ function changeFruit(fruit) {
     fruit[2] = "orange";
     return fruit;
 }
-console.log(changeFruit);
+console.log(fruit);
+console.log(fruit[2]);
 
-//Answer is banana
 
 //QUESTION 4.
 
-const highestNumber = [4, 5, 10, -2];
-console.log (Math.max (...highestNumber));
+const numberOne = [4, 5, 10, -2];
+console.log (Math.max (...numberOne));
 
+const numberTwo = [23, 3, -50, 98, 576]; 
+console.log (Math.max(...numberTwo));
+
+const numberThree =[-50, -24, -100, -9, -1];
+console.log(Math.max(...numberThree));
 
 
 //QUESTION 5.
-const valTimesIndex = [1, 2, 3];
-
-function valTimesIndex(arr){
-    return arr.map(function(value,index,array){
-      return value*index;
-  });   
-}
-console.log(valTimesIndex);
+const numbersTimesIndex = [1, 2, 3];
+console.log(numbersTimesIndex);
